@@ -25,19 +25,13 @@ source env/bin/activate
 ## Instalar Django
 
 ``` bash
-django-admin startproject ventas .
+django-admin startproject ventasprendas .
 ```
 
 ## Crear una aplicación
 
 ``` bash
-python manage.py startapp core
-```
-
-## Crear un super usuario
-
-``` bash
-python manage.py createsuperuser
+python manage.py startapp ventas
 ```
 
 ## Crear las migraciones
@@ -47,6 +41,11 @@ python manage.py makemigrations
 ```
 ``` bash
 python manage.py migrate
+```
+## Crear un super usuario
+
+``` bash
+python manage.py createsuperuser
 ```
 ## Ejecutar el servidor
 
