@@ -33,7 +33,14 @@ django-admin startproject ventasprendas .
 ``` bash
 python manage.py startapp ventas
 ```
+Es necesario agregar la aplicación en el archivo settings.py
 
+``` python
+INSTALLED_APPS = [
+    'ventas',
+    ...
+]
+```
 ## Crear las migraciones
 
 ``` bash
