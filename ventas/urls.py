@@ -8,7 +8,7 @@ urlpatterns = [
     path('productos/', listar_productos, name='productos'),
     path('ventas/', listar_ventas, name='ventas'),
 
-    path('', ClienteListCreateView.as_view(), name='cliente-list-create'),
+    # path('', ClienteListCreateView.as_view(), name='cliente-list-create'),
     path('api/clientes/', ClienteListCreateView.as_view(), name='cliente-list-create'),
     path('api/clientes/<int:pk>/', ClienteRetrieveUpdateDestroyView.as_view(), name='cliente-retrieve-update-destroy'),
     path('api/productos/', ProductoListCreateView.as_view(), name='producto-list-create'),
